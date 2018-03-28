@@ -1,7 +1,8 @@
  
   body{
       font-size:100%;
-      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+      font-family: 'Montserrat', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
       line-height: 1.5;
       height: 100%;
 
@@ -30,11 +31,12 @@
     left:0;
     width:100%;
     background-color:#fff;
-    box-shadow: 0 0 8px 1px rgba(0,0,0,0.9);
     padding:0.5em;
     min-width:320px;
     z-index: 99999;
     user-select: none;
+    border-bottom: 1 solid #000;
+    font-weight: 700;
 }
 .icon-view{
     display:flex;
@@ -52,6 +54,10 @@
 .icon-view-links li:hover{
     color:#00c8c8;
 }
+.company-name span{
+    font-weight: 400;
+}
+
 
 .list-view{
     display:none;
@@ -67,12 +73,11 @@
 ******************************************************************
 */
 main{
-    padding:0 2.5em;
+    padding:4rem 0.25rem;
 }
 
 .feature{
     display: grid;
-    grid-template-rows: repeat(2 1fr); 
     grid-template-columns: repeat(2 1fr);
     grid-column-gap: 0.625rem;
     grid-row-gap: 0.625rem;
@@ -82,6 +87,34 @@ main{
 }
 .feature img{
     width:100%;
+}
+
+.grid-cell figure{
+    position: relative;
+}
+.icons i{
+    position: absolute;
+    padding: 1.25rem 0.25rem;
+    right:0%;
+    top:0%;
+    font-size: 2rem;
+}
+.icons p{
+    position: absolute;
+    top:0%;
+    left:0%;
+    padding: 0.70rem 0.5rem;
+    color: #a6a6a6;
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+.item-pound-sign{
+    vertical-align: super;
+    font-size: 0.5rem;
+}
+.item-strike-out{
+    text-decoration: line-through;
+    margin-right: .5rem;
 }
 
 .x2{
