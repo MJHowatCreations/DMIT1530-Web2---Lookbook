@@ -1,12 +1,9 @@
  
   body{
-      font-size:100%;
+      font-size:125%;
       font-family: 'Montserrat', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-
       line-height: 1.5;
       height: 100%;
-
-    
 }
  /*
 ******************************************************************
@@ -69,7 +66,7 @@
  
  /*
 ******************************************************************
-                       CSS GRID LAYOUT BASICS
+                            MAIN CONTENT
 ******************************************************************
 */
 main{
@@ -108,8 +105,7 @@ main{
     font-size: 0.75rem;
     font-weight: 300;
 }
-.item-pound-sign{
-    vertical-align: super;
+.sub{
     font-size: 0.5rem;
 }
 .item-strike-out{
@@ -122,11 +118,74 @@ main{
 }
 
 
+ /*
+******************************************************************
+                            FOOTER
+******************************************************************
+*/
+footer{
+    width:100%;
+    
+}
+
+.footer-links{
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    width:95%;
+}
+.footer-links li{
+
+}
+.footer-boxes{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:95%;
+    margin: 0 auto;
+
+}
+.footer-award{
+    text-align: center;
+    background-color: #333333;
+    color:white;
+    width:48%;
+    padding: 1rem;
+
+
+}
+.footer-social-media{
+    background-color: #00c8c8;
+    color:white;
+    width:48%;
+    text-align: center;
+    padding:1.75rem;
+}
+
+.footer-copywrite{
+    margin-top: 2rem;
+    width:100%;
+    height:1.5rem;
+    background-color: #333;
+}
+
+
+
+
+
+
+
+ /*
+******************************************************************
+                            MEDIA QUERY
+******************************************************************
+*/
 
 @media (min-width: 680px ){
     .feature-layout{
         display:flex;
         justify-content: space-evenly;
+        margin: 0 10vw;
     }
     .feature{
         flex: 0 1 48%;
