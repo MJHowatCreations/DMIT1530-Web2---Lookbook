@@ -89,12 +89,18 @@ main{
 .grid-cell figure{
     position: relative;
 }
-.icons i{
+.icons > div{
     position: absolute;
-    padding: 1.25rem 0.25rem;
-    right:0%;
-    top:0%;
-    font-size: 2rem;
+    height: 6vw;
+    width: 6vw;
+    line-height: 6vw;
+    font-size: 6vw;
+    right:2.5%;
+    top:2.5%;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.25);
+    border-radius: 50%;
+    background-color: #9a9a9a;
+    color: white;
 }
 .icons p{
     position: absolute;
@@ -102,10 +108,11 @@ main{
     left:0%;
     padding: 0.70rem 0.5rem;
     color: #a6a6a6;
-    font-size: 0.75rem;
+    font-size: 3vw;
     font-weight: 300;
+    
 }
-.sub{
+.sup{
     font-size: 0.5rem;
 }
 .item-strike-out{
@@ -125,41 +132,61 @@ main{
 */
 footer{
     width:100%;
-    
+    background-color: #f8f8f8;
 }
 
 .footer-links{
     margin: 0 auto;
     display:flex;
     justify-content: space-between;
-    width:95%;
+    width:90%;
+    padding: 1rem 0;
+    
+}
+.footer-links h5{
+    color:#575153;
+    padding-bottom: 0.5rem;
 }
 .footer-links li{
+    color:#727272;
+    padding-bottom: 0.5rem;
+    font-size: 0.5rem;
 
 }
 .footer-boxes{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    width:95%;
+    width:90%;
     margin: 0 auto;
 
 }
-.footer-award{
-    text-align: center;
-    background-color: #333333;
+.footer-award, .footer-social-media{
     color:white;
+    height: 20vw;
     width:48%;
-    padding: 1rem;
-
-
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+h3{
+    font-weight: 700;
+}
+h4{
+    font-weight: 400;
+}
+.footer-award{
+    flex-direction: column;
+    background-color: #333333;
+}
+
 .footer-social-media{
     background-color: #00c8c8;
-    color:white;
-    width:48%;
-    text-align: center;
-    padding:1.75rem;
+}
+.footer-social-media li{
+    margin-left:0.5rem;
 }
 
 .footer-copywrite{
@@ -167,6 +194,13 @@ footer{
     width:100%;
     height:1.5rem;
     background-color: #333;
+    color:#999;
+}
+.footer-copywrite p{
+    width:90%;
+    margin: 0 auto;
+    font-size: 0.5rem;
+    padding-top: 0.40rem;
 }
 
 
