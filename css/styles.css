@@ -56,7 +56,7 @@
 }
 
 
-.list-view{
+.lg-header, .lg-view-links{
     display:none;
 }
 
@@ -139,7 +139,7 @@ footer{
     margin: 0 auto;
     display:flex;
     justify-content: space-between;
-    width:90%;
+    width:95%;
     padding: 1rem 0;
     
 }
@@ -157,7 +157,7 @@ footer{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    width:90%;
+    width:95%;
     margin: 0 auto;
 
 }
@@ -197,8 +197,7 @@ h4{
     color:#999;
 }
 .footer-copywrite p{
-    width:90%;
-    margin: 0 auto;
+    text-align: center;
     font-size: 0.5rem;
     padding-top: 0.40rem;
 }
