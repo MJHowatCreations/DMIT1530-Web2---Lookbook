@@ -1,0 +1,242 @@
+ 
+  body{
+    font-size:125%;
+    font-family: 'Montserrat', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    line-height: 1.5;
+    height: 100%;
+    min-width: 620px;
+}
+/*
+******************************************************************
+                  TYPOGRAPHY
+******************************************************************
+*/
+
+
+.feature-links li:hover, .list-view li:hover, .lg-view-links li:hover{
+  color:#00c8c8;
+}
+.icons>div:hover{
+  color:#575153;
+  background-color: white;
+}
+
+
+/*
+******************************************************************
+                         CONTROLS
+******************************************************************
+*/
+.control-strip{
+  top:0;
+  left:0;
+  width:100%;
+  background-color:#fff;
+  padding:0;
+  min-width:320px;
+  z-index: 99999;
+  user-select: none;
+  border-bottom: 1 solid #000;
+  font-weight: 400;
+}
+.company-name{
+      font-weight: 700;
+  }
+
+.company-name span{
+  font-weight: 400;
+}
+.list-view{
+      font-size: 0.9rem;
+      padding:1rem 0;
+      margin: 0 auto;
+      width:95%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+
+  .list-view li{
+      padding-right: 1.5rem;
+  }
+
+  .list-view h5:nth-child(1){
+      margin-right: auto;
+  }
+  .feature-links{
+    width:94%;
+    margin: 0 auto;
+  }
+
+/*
+******************************************************************
+                          JUMBOTRON
+******************************************************************
+*/
+.jumbotron{
+  color:white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 15rem;
+  width:100%;
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), 
+  url(../img/lookbook-header.png)50% 16%  no-repeat;
+  background-size: cover, cover;
+}
+.jumbotron h1{
+  font-weight: 300;
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+}
+.jumbotron h1>span{
+  font-weight: 700;
+}
+.jumbotron h2{
+  font-weight: 400;
+}
+/*
+******************************************************************
+                          FORM CONTROL
+******************************************************************
+*/
+
+.form-control{
+    margin: 5rem auto;
+    width:50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap:0.5rem;
+    
+}
+.form-control h3{
+    color:#525252;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.form-control h4{
+    color:#575757;
+}
+.form-control h5{
+    color:#14bebb;
+}
+.form-control p{
+    color:#9f9f9f;
+}
+.form-control span{
+    color:#2eb8ba;
+}
+.form-control label, .form-control input, .form-control select{
+    font-size: .9rem;
+    color:#999999;
+}
+
+.formbox label{
+    display:block;
+}
+.formbox input, .formbox select{
+    width:100%;
+}
+
+label#radio{
+    display: inline;
+}
+
+
+
+.x2{
+    grid-column:span 2;
+}
+
+
+
+
+
+
+/*
+******************************************************************
+                          FOOTER
+******************************************************************
+*/
+footer{
+  width:100%;
+  background-color: #f8f8f8;
+}
+.footer-link-box{
+  margin: 0 auto;
+  width:60%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-links{
+  display:flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width:48%;    
+}
+
+.footer-links h5{
+  color:#575153;
+  padding-bottom: 0.5rem;
+}
+.footer-links li{
+  color:#727272;
+  padding-bottom: 0.5rem;
+  font-size: 0.75rem;
+
+}
+.footer-boxes{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+
+}
+.footer-award, .footer-social-media{
+  color:white;
+  height: 8rem;
+  width:48%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding:0 1rem;
+}
+
+footer h3{
+  font-weight: 700;
+}
+footer  h4{
+  font-weight: 400;
+}
+.footer-award{
+  flex-direction: column;
+  background-color: #333333;
+}
+
+.footer-social-media{
+  background-color: #00c8c8;
+}
+.footer-social-media li{
+  margin-left:0.5rem;
+}
+
+.footer-copywrite{
+  margin-top: 2rem;
+  width:100%;
+  height:1.5rem;
+  background-color: #333;
+  color:#999;
+}
+.footer-copywrite p{
+  text-align: center;
+  font-size: 0.5rem;
+  padding-top: 0.40rem;
+}
+
+
+
+

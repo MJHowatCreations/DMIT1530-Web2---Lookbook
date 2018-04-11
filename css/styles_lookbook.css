@@ -1,0 +1,508 @@
+ 
+  body{
+    font-size:125%;
+    font-family: 'Montserrat', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    line-height: 1.5;
+    height: 100%;
+    min-width: 620px;
+}
+/*
+******************************************************************
+                  TYPOGRAPHY
+******************************************************************
+*/
+
+
+.feature-links li:hover, .list-view li:hover, .lg-view-links li:hover{
+  color:#00c8c8;
+}
+.icons>div:hover{
+  color:#575153;
+  background-color: white;
+}
+
+
+/*
+******************************************************************
+                         CONTROLS
+******************************************************************
+*/
+.control-strip{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background-color:#fff;
+  padding:0.5em;
+  min-width:320px;
+  z-index: 99999;
+  user-select: none;
+  border-bottom: 1 solid #000;
+  font-weight: 700;
+}
+.icon-view{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.company-name span{
+  font-weight: 400;
+}
+
+
+.lg-header{
+  display:none;
+}
+/*
+******************************************************************
+                          JUMBOTRON
+******************************************************************
+*/
+.jumbotron{
+  color:white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 15rem;
+  width:100%;
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), 
+  url(../img/lookbook-header.png)50% 16%  no-repeat;
+  background-size: cover, cover;
+}
+.jumbotron h1{
+  font-weight: 300;
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+}
+.jumbotron h1>span{
+  font-weight: 700;
+}
+.jumbotron h2{
+  font-weight: 400;
+}
+.feature-links{
+  padding:1rem 0.625rem;
+  height: 5.65rem;
+}
+
+.feature-links ul{
+  padding-top:1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0.5rem;
+  width: 100%;
+  border-top: 1px solid #f3f3f3;
+}
+.feature-links li{
+  font-size: 0.5rem;
+  font-weight: 400;
+  color: #919191;
+  margin-right: 1rem;
+}
+
+
+
+
+/*
+******************************************************************
+                          MAIN CONTENT
+******************************************************************
+*/
+.sm-hidden{
+  display:none;
+}
+main{
+  padding: 3rem 0;
+}
+.feature{
+  display:grid;
+  grid-column-gap: 0.625rem;
+  grid-row-gap: 0.625rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-row: auto auto;
+  margin:0 auto;
+  padding: 0.625rem;
+
+}
+.grid-cell{
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+}
+.feature img{
+    width:100%;
+    max-height: 100%;
+}
+
+.jane-lookbook{
+  color:#575153;
+  width: 35%;
+  padding: 1rem 0 0 0.75rem;
+}
+.jane-lookbook h2{
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+
+}
+.jane-lookbook h3{
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.jane-lookbook p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 0.60rem;
+  color:#8e8c8c;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+.jane-lookbook span{
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 0.50rem;
+  color:#727272;
+}
+.jane-lookbook a{
+  color:#454647;
+  font-weight: 400;
+  font-size: 0.55rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #737373;
+}
+
+.x2{
+  background-position: right;
+  background: url(../img/lookbook-features/lookbook-doublefeature.png) no-repeat right, linear-gradient(#dcdddf,#e8e8ea);
+  background-size:cover, cover;
+  grid-column: span 2;
+}
+
+.x3{
+  background-color:#efefed;
+}
+.win-lookbook{
+  padding: 1.5rem 2.75rem 0 0.75rem;
+}
+.win-lookbook h2>span{
+  font-weight: 700;
+}
+.win-lookbook h2{
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  color: #575153;
+}
+.win-lookbook p>span{
+  font-family: 'Montserrat';
+  color:#727272;
+  font-weight: 400;
+  font-size: 0.5rem;
+}
+.win-lookbook p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #a4a3a2;
+  padding-bottom: 0.5rem;
+  font-size: .55rem;
+}
+.win-lookbook a{
+  color:#5c5d5d;
+  font-weight: 700;
+  font-size: 0.55rem;
+  padding: 0.25rem 0.65rem;
+  border: 2px solid #737373;
+}
+.win-lookbook h3{
+  margin-top: 1.5rem;
+  color:#00c8c8;
+  font-size: 4rem;
+  line-height: 3rem;
+}
+.win-lookbook h4{
+  color:#00c8c8;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.grid-cell figure{
+  position: relative;
+}
+.icons > div{
+  position: absolute;
+  height: 6vw;
+  width: 6vw;
+  line-height: 6vw;
+  font-size: 6vw;
+  right:2.5%;
+  top:2.5%;
+  box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.25);
+  border-radius: 50%;
+  background-color: #9a9a9a;
+  color: white;
+}
+.icons p{
+  position: absolute;
+  top:0%;
+  left:0%;
+  padding: 0.70rem 0.5rem;
+  color: #a6a6a6;
+  font-size: 3vw;
+  font-weight: 300;
+  
+}
+.sup{
+  font-size: 0.5rem;
+}
+/*
+******************************************************************
+                          FOOTER
+******************************************************************
+*/
+footer{
+  width:100%;
+  background-color: #f8f8f8;
+}
+.footer-link-box{
+  margin: 0 auto;
+  width:97%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-links{
+  display:flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width:48%;    
+}
+
+.footer-links h5{
+  color:#575153;
+  padding-bottom: 0.5rem;
+}
+.footer-links li{
+  color:#727272;
+  padding-bottom: 0.5rem;
+  font-size: 0.45rem;
+
+}
+.footer-boxes{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  width:98%;
+  margin: 0 auto;
+
+}
+.footer-award, .footer-social-media{
+  color:white;
+  height: 20vw;
+  width:48%;
+  font-size: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3{
+  font-weight: 700;
+}
+h4{
+  font-weight: 400;
+}
+.footer-award{
+  flex-direction: column;
+  background-color: #333333;
+}
+
+.footer-social-media{
+  background-color: #00c8c8;
+}
+.footer-social-media li{
+  margin-left:0.5rem;
+}
+
+.footer-copywrite{
+  margin-top: 2rem;
+  width:100%;
+  height:1.5rem;
+  background-color: #333;
+  color:#999;
+}
+.footer-copywrite p{
+  text-align: center;
+  font-size: 0.5rem;
+  padding-top: 0.40rem;
+}
+
+
+
+
+
+
+
+/*
+******************************************************************
+                          MEDIA QUERY
+******************************************************************
+*/
+
+@media (min-width: 710px ){
+
+/*
+******************************************************************
+                  Large Nav
+******************************************************************
+*/
+
+  .lg-header{
+      display: block;
+  }
+  .icon-view{
+      display:none;
+  }
+
+  .control-strip{
+      width:100%;
+      position:static;
+      padding: 0;
+      font-weight: 400;
+  }
+  .company-name{
+      font-weight: 700;
+  }
+
+  .list-view{
+      font-size: 0.9rem;
+      padding:1rem 0;
+      margin: 0 auto;
+      width:95%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+
+  .list-view li{
+      padding-right: 1.5rem;
+  }
+
+  .list-view h5:nth-child(1){
+      margin-right: auto;
+  }
+  .feature-links{
+    width:94%;
+    margin: 0 auto;
+  }
+
+/*
+******************************************************************
+                  Large Main
+******************************************************************
+*/
+main{
+  padding: 0;
+  padding-bottom: 1rem;
+}
+.feature-layout{
+  margin:0 auto;
+  width:94%;
+  padding-top:0;
+}
+.feature{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.sup{
+  font-weight: 300;
+  font-size: 0.5rem;
+}
+.icons p{
+  font-size: .75rem;
+}
+.icons > div{
+  height: 2.25vw;
+  width: 2.25vw;
+  line-height: 2.25vw;
+  font-size: 2.25vw;
+  right:2.5%;
+  top:2.5%;
+  background-color: #9a9a9a;
+  color: white;
+}
+.x2{
+  background-position-x: -10%;
+}
+.x3{
+  background: url(../img/lookbook-features/lookbook-featuretriple.png) no-repeat ;
+  background-size:cover;
+  grid-column: span 3;
+  position: relative;
+}
+.win-lookbook{
+  line-height: 1.75;
+  width:25rem;
+}
+.win-lookbook p {
+  margin-bottom: 1rem;
+  font-size: 0.65rem;
+}
+.win-lookbook a{
+  font-size: 1rem;
+}
+p.sm-hidden{
+  width:20rem;
+  margin-top: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.5rem;
+  display: block;
+  position: absolute;
+  bottom:-50%;
+  left:1%;
+  
+}
+.win-lookbook h3{
+  font-size: 7rem;
+  position: absolute;
+  right: 5%;
+  bottom: 40%;
+}
+.win-lookbook h4{
+  font-size: 2.5rem;
+  right: 5%;
+  bottom: 10%;
+  position: absolute;
+}
+
+
+
+
+
+/*
+******************************************************************
+                  Large Footer
+******************************************************************
+*/
+
+  .footer-link-box{
+      width:60%;
+  }
+  .footer-links li{
+      font-size: 0.75rem;
+  }
+  .footer-boxes{
+      width: 60%;
+
+  }
+  .footer-award, .footer-social-media{
+      height: 8rem;
+      font-size: 1.5rem;
+  }
+  .footer-social-media{
+      justify-content: space-evenly;
+      padding:0 1rem;
+  }
+
+
+}

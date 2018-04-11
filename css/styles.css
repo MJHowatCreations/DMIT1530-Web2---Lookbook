@@ -16,6 +16,13 @@
     vertical-align:middle;
     color:#c4c4c4;
 }
+.icons>div:hover{
+    color:#575153;
+    background-color: white;
+  }
+  .icon-view-links li:hover, .list-view li:hover, .lg-view-links li:hover{
+    color:#00c8c8;
+}
  
  /*
 ******************************************************************
@@ -48,9 +55,7 @@
     width: 100%;
 
 }
-.icon-view-links li:hover{
-    color:#00c8c8;
-}
+
 .company-name span{
     font-weight: 400;
 }
@@ -134,15 +139,19 @@ footer{
     width:100%;
     background-color: #f8f8f8;
 }
-
-.footer-links{
+.footer-link-box{
     margin: 0 auto;
+    width:97%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-links{
     display:flex;
     justify-content: space-between;
-    width:95%;
     padding: 1rem 0;
-    
+    width:48%;    
 }
+
 .footer-links h5{
     color:#575153;
     padding-bottom: 0.5rem;
@@ -150,14 +159,14 @@ footer{
 .footer-links li{
     color:#727272;
     padding-bottom: 0.5rem;
-    font-size: 0.5rem;
+    font-size: 0.45rem;
 
 }
 .footer-boxes{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    width:95%;
+    width:98%;
     margin: 0 auto;
 
 }
@@ -214,7 +223,110 @@ h4{
 ******************************************************************
 */
 
-@media (min-width: 680px ){
+@media (min-width: 600px ){
+
+ /*
+******************************************************************
+                    Large Nav
+******************************************************************
+*/
+    .lg-header{
+        display: block;
+        background-image: url(../img/desktop-header.png);
+        height: 40rem;
+        background-repeat: no-repeat;
+        background-attachment:initial;
+        background-position: top left;
+        position: relative;
+    }
+    .icon-view{
+        display:none;
+    }
+
+    .control-strip{
+        width:100%;
+        position:static;
+        padding: 0;
+        background-color: #f8f8f8;
+        font-weight: 400;
+    }
+    .company-name{
+        font-weight: 700;
+    }
+    h1{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #575153;
+        font-size: 20rem;
+    }
+    .lg-header>a{
+        position: absolute;
+        padding: 0.5rem 1rem;
+        color:#505152;
+        text-decoration: none;
+        border: 1px solid #7c7c7c;
+        right: 15%;
+        bottom: 20%;
+        font-size: 0.75rem;
+        font-weight: 300;
+        box-shadow: 1px 1px #c3c3c3;
+    }
+
+
+
+    .list-view{
+        font-size: 0.9rem;
+        padding-top:1rem;
+        margin: 0 auto;
+        width:95%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .list-view li{
+        padding-right: 1.5rem;
+    }
+
+    .list-view h5:nth-child(1){
+        margin-right: auto;
+    }
+
+ /*
+******************************************************************
+                    Large Main
+******************************************************************
+*/
+
+    .lg-view-links{
+        display: block;
+    }
+    .lg-view-links ul{
+        display: flex;
+        padding-top: 1rem;
+        border-top: 1px solid #f8f8f8;
+        padding-bottom: 2rem;
+        font-size: 0.6rem;
+        padding-left: 11vw;
+        color:#aaaaaa;
+    }
+    .lg-view-links li{
+        margin-right: 0.5rem;
+    }
+    .icons p{
+        font-size: 1.25vw;
+    }
+    .icons > div{
+        height: 2.25vw;
+        width: 2.25vw;
+        line-height: 2.25vw;
+        font-size: 2.25vw;
+        right:2.5%;
+        top:2.5%;
+        background-color: #9a9a9a;
+        color: white;
+    }
     .feature-layout{
         display:flex;
         justify-content: space-evenly;
@@ -224,4 +336,31 @@ h4{
         flex: 0 1 48%;
         padding-bottom: 0;
     }
+
+/*
+******************************************************************
+                    Large Footer
+******************************************************************
+*/
+
+    .footer-link-box{
+        width:60%;
+    }
+    .footer-links li{
+        font-size: 0.75rem;
+    }
+    .footer-boxes{
+        width: 60%;
+
+    }
+    .footer-award, .footer-social-media{
+        height: 8rem;
+        font-size: 1rem;
+    }
+    .footer-social-media{
+        justify-content: space-evenly;
+        padding:0 1rem;
+    }
+
+
 }
