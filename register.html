@@ -74,38 +74,52 @@
             <label for="phone">Phone Number (optional)</label>
             <input id="phone" type="text" name="phone" value=""/>
         </div>
-        <div class="formbox x2" role="radio controls">
-            
-            <label for="radio">
-                <input id="radio" class="radiobox" type="radio">
+        <div class="formbox x2 radio" role="radio controls">
+            <input id="radio" type="radio">
+            <span class="radiobox"></span>
+            <label for="radio">               
                 I agree to the terms and conditions of the website. I may opt out at any time.
             </label>
         </div>
         <div class="formbox x2" role="message controls">
             <label for="message">Send us a message (optional)</label>
-            <input id="message" type="text" name="message" value=""/>
+            <textarea id="message" name="textarea" style="height:10rem;"></textarea>
         </div>
         <div class="formbox x2">
             <h4>Sign up for</h4>
         </div>
-        <div class="formbox x2" role="signup controls">
-            <input type="checkbox">
-            <label for="">exclusive updates</label>
+        <div class="formbox x2 signup" role="signup controls">
+            <div class="checkbox">
+                <input type="checkbox">
+                <label for="">exclusive updates</label>
+            </div>
 
-            <input type="checkbox">
-            <label for="">discounts/sales</label>
 
-            <input type="checkbox">
-            <label for="">new arrivals</label>
+            <div class="checkbox">
+                <input type="checkbox">
+                <label for="">discounts / sales</label>
+            </div>
 
-            <input type="checkbox">
-            <label for="">contests</label>
 
-            <input type="checkbox">
-            <label for="">everything</label>
+            <div class="checkbox">
+                <input type="checkbox">
+                <label for="">new arrivals</label>
+            </div>
 
-            <input type="checkbox">
-            <label for="">coupons</label>
+            <div class="checkbox">
+                <input type="checkbox">
+                <label for="">contests</label>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox">
+                <label for="">everything</label>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox">
+                <label for="">coupons</label>
+            </div>
         </div>
 
         <div class="formbox x2" role="signup controls">
@@ -114,6 +128,7 @@
         <div class="formbox" role="language pref controls">
             <label for="lang-pref">Language</label>
             <select id="lang-pref" name="lang-pref">
+                <option value="">[select a value]</option>
                 <option value="">English</option>
                 <option value="">French</option>
                 <option value="">Spanish</option>
@@ -123,6 +138,7 @@
         <div class="formbox" role="size pref controls">
             <label for="size-pref">Do you prefer a size of clothing</label>
             <select id="size-pref" name="size-pref">
+                <option value="">[select a value]</option>
                 <option value="">Small</option>
                 <option value="">Medium</option>
                 <option value="">Large</option>
@@ -133,6 +149,7 @@
         <div class="formbox" role="location pref controls">
             <label for="loca-pref">Your Store Location</label>
             <select id="loca-pref" name="loca-pref">
+                <option value="">[select a value]</option>
                 <option value="">Edmonton, AB</option>
                 <option value="">Calgary, AB</option>
                 <option value="">Lethbridge, AB</option>
@@ -141,15 +158,15 @@
         </div>
         <div class="formbox"></div>
 
-        <div class="formbox">
-            <a class="btn" href="">CREATE ACCOUNT</a>
+        <div class="formbox btn">
+            <a href="">CREATE ACCOUNT</a>
         </div>
 
-        <div class="formbox">
-            <p>By clicking 'Create Account', you agree to our <span><a href="">Privacy Policy ---></a></span>
+        <div class="formbox privacy">
+            <p>By clicking 'Create Account', you agree to our <span><a href="">Privacy Policy <i class="fas fa-long-arrow-alt-right"></i></a></span>
         </div>
 
-        <div class="formbox x2">
+        <div class="formbox x2 help">
             <h5>NEED HELP?</h5>
             <p>If you have questions about your account, please contact <span><a href="">customer service</a></span> 24 hours a day, 7 days a week. <span class="bold"><a href="">1-888-555-5555</a></span>
         </div>

@@ -102,13 +102,17 @@
 ******************************************************************
 */
 
+.x2{
+    grid-column:span 2;
+}
+
 .form-control{
     margin: 5rem auto;
-    width:50%;
+    width:45%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1rem;
-    grid-row-gap:0.5rem;
+    grid-row-gap:1rem;
     
 }
 .form-control h3{
@@ -117,37 +121,106 @@
     font-weight: 400;
 }
 .form-control h4{
+    font-size: 1rem;
+    font-weight: 400;
     color:#575757;
 }
 .form-control h5{
+    font-size: 0.95rem;
     color:#14bebb;
 }
 .form-control p{
-    color:#9f9f9f;
+    font-size: 0.9rem;
+    color:#7a7a7a;
 }
 .form-control span{
+  font-weight: 700;
     color:#2eb8ba;
 }
-.form-control label, .form-control input, .form-control select{
+.form-control label, .form-control input, .form-control select, #message{
     font-size: .9rem;
     color:#999999;
+}
+.form-control input, .form-control select, #message{
+  padding: 0.5rem 0.25rem;
+  line-height: 1.25;
 }
 
 .formbox label{
     display:block;
 }
-.formbox input, .formbox select{
-    width:100%;
+.formbox input, .formbox select, #message{
+  width:100%;
+  resize: none;
 }
 
-label#radio{
-    display: inline;
+.radio{
+  display: flex;
+  position: relative;
 }
 
+#radio{
+  opacity: 1;
+  width:22px;
+  height:22px;
+  margin-right: 1rem;
+}
 
+/*.radiobox{
+  border: 1px solid #f0f0f0;
+  border-radius: 50%;
+  width:22px;
+  height: 22px;
+  position:absolute;
+}
+.radiobox:after{
+  content: "";
+  position:absolute;
+  display: none;
+}
+#radio:checked ~ .radiobox:after{
+  display:block;
 
-.x2{
-    grid-column:span 2;
+}
+.radio .radiobox:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}*/
+.signup{
+  justify-content: space-between;
+  display:flex;
+  flex-wrap: wrap;
+}
+.checkbox{
+  width:33%;
+}
+.checkbox label{
+  display: inline-block;
+
+}
+.checkbox input{
+  width:1rem;
+}
+.btn{
+  align-self: center;
+  padding:1rem 0;
+}
+.btn a{
+  font-size: 1rem;
+  padding: 0.8rem 1.25rem;
+  border:  2px solid #747474;
+}
+.privacy{
+  justify-self:end;
+  width: 75%;
+  text-align: right;
+}
+.help{
+  width:90%;
 }
 
 
